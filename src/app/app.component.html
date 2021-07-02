@@ -1,0 +1,19 @@
+<!-- <span>
+  Select Language
+  <select (click)="selectLang($event.target.value)">
+    <option *ngFor="let item of supportLanguage">
+      {{item}}
+    </option>
+  </select>
+</span>
+<hr>
+<p>{{'home.title' | translate}}</p>
+<div class="container">
+  <app-button color="red" text="add" (btnClick)="toggleAddTask()"></app-button>
+</div> -->
+<app-header></app-header>
+
+<span class="up" (click)="onClick()">Up</span>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
